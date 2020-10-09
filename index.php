@@ -20,16 +20,21 @@
     <!-- corpo -->
     <main>
       <div class="container">
+        <div class="cds">
+
+        </div>
 
       </div>
     </main>
     <!-- corpo -->
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="container-main">
-        <img class="album-img" src="{{{poster}}}" alt="copertina">
-        <h3>{{title}}</h3>
-        <h4>{{author}}</h4>
-        <h4>{{year}}</h4>
+      <div class="cd">
+        <div class="cd-poster">
+          <img src= "{{poster}}">
+        </div>
+        <h3 class="cd-title"> {{title}}</h3>
+        <div class="cd-author">{{author}}</div>
+        <div class="cd-year">{{year}}</div>
       </div>
     </script>
    <script src="dist/app.js" charset="utf-8"></script>

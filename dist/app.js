@@ -16117,7 +16117,7 @@ function render(result) {
       "year": album.year
     };
     var html = template(context);
-    $(".container-main").append(html);
+    $(".cds").append(html);
   }
 }
 
