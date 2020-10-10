@@ -2,6 +2,7 @@ const $ = require('jquery');
 const Handlebars = require("handlebars");
 
 $(document).ready(function() {
+  // andiamo a fare una chiamata al server php
   $.ajax(
    {
       "url": "http://localhost/php-ajax-dischi/server.php",
@@ -30,6 +31,11 @@ function render(result) {
       "author" : album.author,
       "year" : album.year,
     };
+
+
+    // e ventualmente potremmo togliere la var contex di sopra e scrivere
+    // direttamente qui sotto var html = template (data[i]) anziche
+    // var html = template (context);
     var html = template(context);
     $(".cds").append(html);
   }

@@ -21,12 +21,13 @@
     <main>
       <div class="container">
         <div class="cds">
-
         </div>
 
       </div>
     </main>
     <!-- corpo -->
+
+    <!-- template -->
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="cd">
         <div class="cd-poster">
@@ -37,6 +38,7 @@
         <div class="cd-year">{{year}}</div>
       </div>
     </script>
+    <!-- /template -->
    <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>
